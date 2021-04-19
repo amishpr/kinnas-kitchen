@@ -98,14 +98,15 @@ class Foods extends React.Component {
                 >
                     {foods.map(food => (
                          <Box
-                         width={210}
+                         width={250}
+                         height={200}
                          margin={2}
                          key={food._id}
                          paddingY={4}
                        >
                          <Card
                            image = {
-                             <Box height={250} width={200}>
+                             <Box height={200} width={250}>
                                <Image
                                  fit="cover"
                                  alt={`${food.name}`}

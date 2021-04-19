@@ -70,13 +70,13 @@ class App extends Component {
           {categories.map(category => (
             <Link to={`/${category._id}`}>
             <Box
-              width={200}
+              width={250}
               margin={2}
               key={category._id}
             >
               <Card
                 image = {
-                  <Box height={200} width={200}>
+                  <Box height={200} width={250}>
                     <Image
                       fit="cover"
                       alt={`${category.name}`}
