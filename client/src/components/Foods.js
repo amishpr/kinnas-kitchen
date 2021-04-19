@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Card, Image, Text, Button, Mask, IconButton} from 'gestalt';
+import { Box, Heading, Card, Image, Text, Button, Mask, IconButton, Spinner } from 'gestalt';
 import { calculatePrice, setCart, getCart } from '../utils';
 import { Link } from 'react-router-dom';
 import Strapi from 'strapi-sdk-javascript/build/main';
@@ -13,7 +13,8 @@ class Foods extends React.Component {
     state = {
         foods: [],
         category: "",
-        cartItems: []
+        cartItems: [],
+        loading: true
     }
 
 
@@ -41,10 +42,12 @@ class Foods extends React.Component {
             this.setState({
                 foods: response.data.category.foods,
                 category: response.data.category.name,
-                cartItems: getCart()
+                cartItems: getCart(),
+                loading:false
             });
         } catch (err) {
             console.error(err);
+            this.setState({loading:false});
         }
 
     }
@@ -73,7 +76,7 @@ class Foods extends React.Component {
 
     render() {
 
-        const { category, foods, cartItems } = this.state;
+        const { category, foods, cartItems, loading } = this.state;
 
         return (
           <Box
@@ -185,6 +188,12 @@ class Foods extends React.Component {
                 </Mask>
 
             </Box>
+
+            {/* Show spinner if items are still loading */}
+            <Spinner
+                show={loading}
+                accessibilityLabel="Loading Spinner"
+            />
 
           </Box>
             

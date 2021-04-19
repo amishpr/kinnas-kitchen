@@ -102,6 +102,7 @@ class App extends Component {
           ))}
         </Box>
 
+        {/* Show spinner if items are still loading */}
         <Spinner
           show={loading}
           accessibilityLabel="Loading Spinner"
