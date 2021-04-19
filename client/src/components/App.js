@@ -22,7 +22,6 @@ class App extends Component {
             categories {
               _id
               name
-              description
               createdAt
               image {
                 url
@@ -68,22 +67,22 @@ class App extends Component {
 
         {/* Categories */}
         <Box wrap display="flex" justifyContent="around">
-          {categories.map(brand => (
-            <Link to={`/${brand._id}`}>
+          {categories.map(category => (
+            <Link to={`/${category._id}`}>
             <Box
               width={200}
               margin={2}
-              key={brand._id}
+              key={category._id}
             >
               <Card
                 image = {
                   <Box height={200} width={200}>
                     <Image
                       fit="cover"
-                      alt={`${brand.name}`}
+                      alt={`${category.name}`}
                       naturalHeight={1}
                       naturalWidth={1}
-                      src={`${apiUrl}${brand.image.url}`}
+                      src={`${apiUrl}${category.image.url}`}
                     />
                   </Box>
                 }
@@ -94,8 +93,7 @@ class App extends Component {
                   justifyContent="center"
                   direction="column"
                 >
-                  <Text bold size="xl">{brand.name}</Text>
-                  <Text>{brand.description}</Text>
+                  <Text bold size="xl">{category.name}</Text>
                 </Box>
            
               </Card>
