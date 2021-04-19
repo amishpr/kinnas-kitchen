@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "brands",
+  "collectionName": "foods",
   "info": {
-    "name": "Brand"
+    "name": "Food"
   },
   "options": {
     "increments": true,
@@ -11,22 +11,28 @@
   },
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "description": {
       "type": "text"
     },
     "image": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",
       "required": false
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "category": {
+      "model": "category",
+      "via": "foods"
     }
   }
 }
