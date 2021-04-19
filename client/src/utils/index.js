@@ -2,13 +2,20 @@ const CART_KEY = "cart";
 const TOKEN_KEY = "jwt";
 
 
-/* Cart Functions */
+/* Calculate Functions */
 export const calculatePrice = items => {
   return `$${items
     .reduce((acc, item) => acc + item.quantity * item.price, 0)
     .toFixed(2)}`;
 };
 
+export const calculateAmount = items => {
+    return Number(
+      items.reduce((acc, item) => acc + item.quantity * item.price, 0).toFixed(2)
+    );
+  };
+  
+/* Cart Functions */
 export const getCart = (cartKey = CART_KEY) => {
     if (localStorage && localStorage.getItem(cartKey)) {
       return JSON.parse(localStorage.getItem(cartKey));

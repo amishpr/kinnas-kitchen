@@ -13,7 +13,7 @@ const ToastMessage = ({ show, message }) =>
       }}
       position="fixed"
     >
-      <Toast color="purple" text={message} />
+      <Toast color="darkGray" text={message} />
     </Box>
   );
 
