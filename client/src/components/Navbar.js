@@ -14,7 +14,7 @@ const Navbar = () => (
     >
         {/* Sign in link  */}
         <NavLink activeClassName="active" exact to="/signin">
-            <Text size="x1" color="white">
+            <Text size="xl" color="white">
                 Signin
             </Text>
         </NavLink>
@@ -38,7 +38,7 @@ const Navbar = () => (
 
         {/* Sign up link*/}
         <NavLink activeClassName="active" exact to="/signup">
-            <Text size="x1" color="white">
+            <Text size="xl" color="white">
                 Signup
             </Text>
         </NavLink>
