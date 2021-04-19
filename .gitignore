@@ -106,3 +106,4 @@ dist
 # Server Configs
 server/config/database.js
 server/config/server.js
+server/api/orders/controllers/orders.js
