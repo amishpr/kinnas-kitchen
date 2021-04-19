@@ -1,9 +1,9 @@
 {
   "name": "kinnas-kitchen",
   "version": "1.0.0",
-  "author" : "Amish Prajapati",
-  "email" : "amish.prajapati@gmail.com",
-  "url" : "https://github.com/amishpr/kinnas-kitchen",
+  "author": "Amish Prajapati",
+  "email": "amish.prajapati@gmail.com",
+  "url": "https://github.com/amishpr/kinnas-kitchen",
   "private": true,
   "dependencies": {
     "eslint": "^5.16.0",
