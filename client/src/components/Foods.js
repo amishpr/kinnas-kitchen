@@ -1,6 +1,8 @@
 import React from 'react';
-import { Box, Heading, Card, Image, Text, Button, Mask, IconButton, Spinner } from 'gestalt';
+import { Box, Heading, Card, Image, Text, Button, Mask, IconButton } from 'gestalt';
 import { calculatePrice, setCart, getCart } from '../utils';
+// import { GridLoader } from 'react-spinners';
+import Loader from './Loader';
 import { Link } from 'react-router-dom';
 import Strapi from 'strapi-sdk-javascript/build/main';
 const apiUrl = process.env.API_URL || 'http://localhost:1337';
@@ -190,11 +192,8 @@ class Foods extends React.Component {
             </Box>
 
             {/* Show spinner if items are still loading */}
-            <Spinner
-                show={loading}
-                accessibilityLabel="Loading Spinner"
-            />
-
+            {/* <GridLoader loading={loading} color="purple"/> */}
+            <Loader show={loading}/>
           </Box>
             
         );

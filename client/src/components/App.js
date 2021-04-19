@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Container, Box, Heading, Card, Image, Text, Spinner} from 'gestalt';
+import { Container, Box, Heading, Card, Image, Text} from 'gestalt';
+import Loader from './Loader';
 import { Link } from 'react-router-dom';
 import "./App.css";
 import Strapi from 'strapi-sdk-javascript/build/main';
@@ -51,6 +52,9 @@ class App extends Component {
 
     return (
       <Container>
+
+        {/* Show spinner if items are still loading */}
+        <Loader show={loading} />
           
         {/* Categories Section */}
         <Box
@@ -102,11 +106,6 @@ class App extends Component {
           ))}
         </Box>
 
-        {/* Show spinner if items are still loading */}
-        <Spinner
-          show={loading}
-          accessibilityLabel="Loading Spinner"
-        />
       </Container>
     )
   }
