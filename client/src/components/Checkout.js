@@ -268,7 +268,7 @@ const ConfirmationModal = ({
       >
         {cartItems.map(item => (
           <Box key={item._id} padding={1}>
-            <Text size="lg" color="red">
+            <Text size="lg" color="orcid">
               {item.name} x {item.quantity} - ${item.quantity * item.price}
             </Text>
           </Box>
