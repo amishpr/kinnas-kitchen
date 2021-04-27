@@ -5,12 +5,12 @@
 
 version: 2
 updates:
-  - package-ecosystem: "server"
+  - package-ecosystem: "npm"
     directory: "/server" # Location of package manifests
     schedule:
       interval: "weekly"
       
-  - package-ecosystem: "client"
+  - package-ecosystem: "npm"
     directory: "/client" # Location of package manifests
     schedule:
       interval: "weekly"
