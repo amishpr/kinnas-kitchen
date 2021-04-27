@@ -3,6 +3,8 @@
 
 ## About
 
+A restaurant ordering app with accounts and payments via Stripe (React.js, AWS, MongoDB, GraphQL, Strapi, Stripe, Node.js).
+
 Ever since I moved back from college by sister has been making me a lot of food. To show my appreciation I wanted to create a restaurant meal ordering app featuring the various dishes she has made so far.
 
 ## Features
