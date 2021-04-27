@@ -12,6 +12,11 @@ or
 npm develop
 ```
 
+Then, open the following url:
+```
+http://localhost:1337/
+```
+
 ## Database Structure
 
 ### Category
