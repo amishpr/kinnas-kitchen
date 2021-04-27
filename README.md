@@ -1,5 +1,5 @@
 # Kinna's Kitchen by Amish Prajapati
-<img src="https://github.com/amishpr/kinnas-kitchen/blob/main/screenshots/kinnas-kitchen-logo.png" height="200">
+<img src="https://github.com/amishpr/kinnas-kitchen/blob/main/screenshots/kinnas-kitchen-logo-color.png" height="200">
 
 ## About
 
