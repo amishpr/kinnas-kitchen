@@ -29,7 +29,7 @@ Ever since I moved back from college by sister has been making me a lot of food.
 * Strapi
 * Stripe API
 
-## Screen Shots
+## Screenshots
 
 ### Home Screen
 
