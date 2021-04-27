@@ -13,7 +13,7 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5",
     "react-spinners": "^0.10.6",
-    "react-stripe-elements": "^2.0.1",
+    "react-stripe-elements": "^6.1.2",
     "strapi-sdk-javascript": "^0.3.3"
   },
   "scripts": {
