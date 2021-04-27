@@ -26,7 +26,7 @@ Stores the category titles for the submenus
 * Name (Text)
 * Description (Text)
 * Image (Media)
-* Foods Relation  (Category belongs to many Foods) 
+* Foods Relation  (Category belongs to many Foods/ One-to-many) 
 
 ### Food
 
