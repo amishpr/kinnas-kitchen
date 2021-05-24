@@ -6,7 +6,7 @@
   "url": "https://github.com/amishpr/kinnas-kitchen",
   "private": true,
   "dependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "^7.27.0",
     "gestalt": "^0.79.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
