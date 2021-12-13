@@ -1702,7 +1702,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.5:
+classnames@^2.2.6:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
 
@@ -3336,12 +3336,16 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
-gestalt@^0.79.1:
-  version "0.79.2"
-  resolved "https://registry.yarnpkg.com/gestalt/-/gestalt-0.79.2.tgz#1ab41395f82ed2c8bb631e91ae5240f32a283cd2"
+gestalt-design-tokens@>0.0.0:
+  version "40.4.2"
+  resolved "https://registry.yarnpkg.com/gestalt-design-tokens/-/gestalt-design-tokens-40.4.2.tgz#3ace3547f67e5706a65ab69f817d7b0eabdddc0e"
+
+gestalt@^40.4.2:
+  version "40.4.2"
+  resolved "https://registry.yarnpkg.com/gestalt/-/gestalt-40.4.2.tgz#1c56b5d748b06da435323e29ab0cd87bac8053a6"
   dependencies:
-    classnames "^2.2.5"
-    prop-types "^15.6.0"
+    classnames "^2.2.6"
+    gestalt-design-tokens ">0.0.0"
 
 get-caller-file@^1.0.1:
   version "1.0.3"
@@ -6116,7 +6120,7 @@ promise@8.0.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.6.0:
+prop-types@^15.5.10:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
