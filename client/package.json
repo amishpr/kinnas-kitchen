@@ -25,6 +25,6 @@
   },
   "devDependencies": {
     "eslint-config-google": "^0.14.0",
-    "eslint-plugin-react": "^7.23.2"
+    "eslint-plugin-react": "^7.34.1"
   }
 }
